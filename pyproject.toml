@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pygame-duck-hunt"
+version = "0.1.0"
+description = "Duck Hunt Game"
+authors = ["Arun Kr. Khattri <arunkhattri@outlook.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "pygame_duck_hunt"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.1.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^6.0.0"
+isort = "^5.10.1"
+pytest = "^7.2.0"
+mypy = "^0.991"
+ipython = "^8.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
